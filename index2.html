@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  
+<title>Build Form using HTML,CSS, JavaScript</title> 
+
+<body>
+      <h1>Application Form</h1>
+      <form>
+      <fieldset>
+            <legend >CONTACT DETAILS</legend>
+
+            <div class="row">
+                  <div class="col-10">
+                        <label for="name">Name(*)</label>
+                  </div>
+
+                  <div class="col-90">
+                        <input type= text id="name" name="name" placeholder="Enter your name">
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="col-10">
+                        <label for ="phone">Telephone(*)</label>
+                  </div>
+
+                  <div class="col-90">
+                        <input type= tel id="phone" name="phone" placeholder="Enter your phone" size="10">
+                  </div>
+                 
+            </div>
+
+            <div class="row">
+                  <div class="col-10">
+                        <label for ="email">Email(*)</label>
+                  </div>
+
+                  <div class="col-90">
+                        <input type= email id="email" name="email" placeholder="Enter your email">
+                  </div>
+            </div>
+    
+     </fieldset>
+
+     <br/>
+
+     <fieldset>
+
+            <legend>PERSONAL INFORMATION</legend>
+            <div class="row">
+                  <div class="col-10">
+                        <label for="birthday">Birthday</label>
+                  </div>
+
+                  <div class="col-90">
+                        <input type="date" id="birthday" name="birthday" min="1/1/2000">
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="col-10">
+                        <label for ="age">Age(*)</label>
+                  </div>
+
+                  <div class="col-90">
+                        <input type= number id="age"  name="age" placeholder="Enter your age">
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="col-10">
+                        <label for ="gender">Gender</label>
+                  </div>
+
+                  <div class="col-90">
+                        <select name="choose" id="choose">
+                              <option value="male">Male</option>
+                              <option value="female" selected>Female</option>
+                              <option value="other">Others</option>
+                        </select>
+                  </div>
+            </div>
+
+            
+            <div class="row">
+                  <div class="col-10">
+                        <label>When did you first know you wanted to be a zoo-keeper?(*)</label>
+                  </div>
+
+                  <div class="col-90">
+                        <textarea  id="textarea" name="textarea" rows="8"> </textarea>
+                  </div>
+            </div>
+
+      </fieldset>
+      <br/>
+      <fieldset>
+            <legend>PICK YOUR FAVORITE ANIMALS</legend>
+
+            <table>
+                  <tr>
+                        <td>
+                              <input type = "checkbox" id="animals" name="Zebra">
+                              <label for= "Zebra">Zebra</label>
+                        </td>
+
+                        <td>
+                              <input type = "checkbox" id="animals" name="elephant">
+                              <label for="elephant">Elephant</label>
+                        </td>
+
+                        <td>
+                              <input type = "checkbox" id="animals" name="cat">
+                              <label for="Cat">Cat</label>
+                        </td>
+
+                        <td>
+                              <input type = "checkbox" id="animals" name="wildebeest">
+                              <label for="wildebeest">Wildebeest</label>
+                        </td>
+                  </tr>
+
+                        <td>
+                              <input type = "checkbox" id="animals" name=" anaconda">
+                              <label for="anaconda">Anaconda</label>
+                        </td>
+
+                        <td>
+                              <input type = "checkbox" id="animals" name="pigeon">
+                              <label for="pigeon">Pigeon</label>
+                        </td>
+
+                        <td>
+                              <input type = "checkbox" id="animals" name="Crab">
+                              <label for="Crab">Crab</label>
+                        </td>
+
+                        <td>
+                              <input type = "checkbox" id="animals" name="human">
+                              <label for="Cat">Human</label>
+                        </td>
+                  </tr>
+            </table>
+
+     </fieldset>
+     <br/>
+
+      <button type ="submit" value="Submit" id="btn1">Submit</button>
+
+  </form>
+
+  <script src="../js/javascript.js"></script>
+  
+</body>
+</html>
